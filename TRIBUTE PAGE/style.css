@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 300px;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+}
+
+.main-header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #242424;
+    color: #fff;
+}
+
+.main-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.main-header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.play-button {
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: #242424;
+}
+
+.play-button button {
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    color: #242424;
+}
+
+.quote-section img {
+    max-width: 50%;
+    height: auto;
+}
+
+.quote-section blockquote {
+    margin-right: 150px;
+    max-width: 250px;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 28px;
+}
+
+.biography-section {
+    background-color: #242424;
+    color: #fff;
+}
+
+.biography-section h2 {
+    font-size: 2.4em;
+    padding: 30px 0 30px 80px;
+    margin: 0;
+}
+
+.biography-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    padding: 0 160px;
+    margin: 0;
+}
+
+.main-footer {
+    text-align: center;
+    background-color: #242424;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.main-footer p {
+    margin: 0;
+}
+
+.main-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-40%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.right{
+    opacity: 0;
+    animation: slideInRight 1s forwards;
+}
+.left{
+    opacity: 0;
+    animation: slideInLeft 1s forwards;
+}
+.up{
+    opacity: 0;
+    animation: slideInFromTop 1s forwards;
+}
+.down{
+    opacity: 0;
+    animation: slideInFromBottom 1s forwards;
+}
+.appear{
+    opacity: 0;
+    animation: appear 2s forwards;
+}
